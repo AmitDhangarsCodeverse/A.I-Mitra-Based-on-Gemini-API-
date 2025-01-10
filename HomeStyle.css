@@ -1,0 +1,309 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles */
+* {
+  color: white; /* Set text color to white for all elements */
+}
+
+body {
+  background-color: #202124; /* Dark background color for the body */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(255, 255, 255); /* Set link color to white */
+  font-size: 1rem; /* Set font size of links */
+}
+
+/* Top Bar (Navigation Bar) */
+.top-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Center the items horizontally and vertically */
+}
+
+/* Bot name styling */
+.bot-name {
+  color: white;
+  font-family: "Faculty Glyphic", serif; /* Use Faculty Glyphic font */
+  font-weight: 500;
+  font-size: 2rem;
+  padding-left: 15px; /* Add left padding */
+}
+
+/* Navbar Items */
+.navbar {
+  display: flex; /* Align navbar items horizontally */
+}
+
+.nav-items {
+  display: inline-block;
+  font-family: "Poppins", serif; /* Use Poppins font for navbar items */
+  margin-right: 60px; /* Add space between navbar items */
+}
+
+/* Underline effect for navbar items */
+.nav-items::after {
+  content: " "; /* Add empty content to create the underline */
+  margin: 0;
+  height: 2px;
+  width: 0px;
+  border-radius: 200px;
+  background-color: white; /* White underline */
+  display: block;
+  transition: width 0.3s ease-in; /* Smooth transition on hover */
+}
+
+/* Navbar item hover effect */
+.nav-items:hover::after {
+  width: 50%; /* Expand underline on hover */
+}
+
+/* Login Icon */
+.login-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.login-icon:active {
+  color: rgba(255, 255, 255, 0.768); /* Change color when clicked */
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  height: 550px;
+  width: 100%; /* Full width of the page */
+}
+
+/* Text Section */
+.text-section {
+  display: flex;
+  justify-content: center; /* Center text section horizontally */
+  height: 550px;
+  width: 50%; /* Half width of the screen */
+}
+
+/* Custom text in the text section */
+.custom-text {
+  padding-top: 120px; /* Add top padding */
+  margin: 0;
+  font-size: 3rem; /* Large font size for the main text */
+  font-family: "Faculty Glyphic", serif; /* Use Faculty Glyphic font */
+}
+
+/* Subtext styling */
+.text-1 {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 1.5rem; /* Medium font size */
+  font-family: "Faculty Glyphic", serif;
+  line-height: 2.3rem; /* Line height for better readability */
+}
+
+.text-2 {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 1rem; /* Smaller font size */
+  font-family: "Faculty Glyphic", serif;
+  line-height: 1.5rem; /* Line height for readability */
+}
+
+/* Button Styling */
+.btn {
+  height: 40px;
+  width: 80px;
+  border-radius: 25px; /* Round corners */
+  border: 2px solid blue;
+  background-color: blue;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: "Faculty Glyphic", serif;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Image Section */
+.img-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 550px;
+  width: 50%; /* Half width of the screen */
+}
+
+.img {
+  height: 300px;
+  border-radius: 2%; /* Rounded corners */
+}
+
+/* Message Bar Styling */
+.msg-bar {
+  margin-top: 300px;
+  margin-left: 250px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 60px;
+  width: 400px;
+  border-radius: 50px; /* Rounded corners */
+  background-color: #202124; /* Dark background color */
+  font-family: "Poppins", serif; /* Use Poppins font */
+}
+
+.msg-bar img {
+  padding: 5px;
+  height: 60px;
+  border-radius: 50%; /* Circular image */
+}
+
+.msg-bar p {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+/* Credit Section (Footer) */
+.credit-section {
+  height: 10%;
+  width: 100%;
+  background-color: #2C2F34;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Text in the credit section */
+.credit-text-1 {
+  font-size: 1.5rem;
+  font-family: "Faculty Glyphic", serif;
+  margin-left: 210px; /* Left margin for positioning */
+}
+
+/* Credit section links */
+.credit-section a {
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  margin-left: 50px; /* Add space between links */
+}
+
+.credit-section a:active {
+  color: rgba(255, 255, 255, 0.622); /* Change color when clicked */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-size: .8rem; /* Smaller font size for links */
+  }
+
+  .bot-name {
+    font-weight: 400;
+    font-size: 1.5rem; /* Smaller bot name font size */
+    padding-left: 10px; /* Adjust padding */
+  }
+
+  .main-section {
+    padding-top: 30px;
+    height: 480px;
+    width: 100%; /* Full width */
+  }
+
+  .img-section {
+    padding-top: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 400px;
+    width: 50%;
+  }
+}
+
+/* For smaller mobile screens (max-width: 375px) */
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 5px;
+  }
+
+  a {
+    font-size: .55rem; /* Very small font size for links */
+  }
+
+  .top-bar {
+    display: grid; /* Change layout to grid */
+  }
+
+  .bot-name {
+    font-weight: 500;
+    font-size: 1.9rem;
+    padding-left: 115px; /* Adjust padding */
+    margin: 5px;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .img-section {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 450px;
+    width: 90%;
+  }
+}
+
+/* For very small mobile screens (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  body {
+    margin: 0;
+    padding: 2px;
+  }
+
+  a {
+    font-size: .5rem; /* Extremely small font size for links */
+  }
+
+  .top-bar {
+    display: grid;
+  }
+
+  .bot-name {
+    font-weight: 500;
+    font-size: 1.9rem;
+    padding-left: 90px;
+    margin: 5px;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .img-section {
+    padding-left: 1.2rem;
+    padding-top: 4.9rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 350px;
+    width: 100%;
+  }
+}
