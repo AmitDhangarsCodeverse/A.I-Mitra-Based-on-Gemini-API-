@@ -6,13 +6,34 @@ This README outlines the project setup, features, and usage of A.I. Mitra.
 
 
 Have a Look
+
+Desktop/Laptop
+
 ![Home](https://github.com/user-attachments/assets/2fa3a575-f711-4757-9ca4-bd5bc0b73115)
+
+![Dashboard](https://github.com/user-attachments/assets/ad10b93d-e9cd-4c43-ac53-5d300111411b)
 
 ![Dashboard4](https://github.com/user-attachments/assets/ee48f8e8-c5c8-4c2c-9963-e5ebe0cb2b48)
 
 ![Screenshot 2024-12-29 142443](https://github.com/user-attachments/assets/50f46b38-7a3d-43a0-9f1d-736af24f1449)
 
 ![GithubRepositoryLink](https://github.com/user-attachments/assets/d3ef4253-f394-47b2-94e4-234982c03648)
+
+Tablet
+![TabletScreen](https://github.com/user-attachments/assets/cc67076e-72b8-45de-9617-1e5e570231e1)
+
+![TabletScreenDashboard](https://github.com/user-attachments/assets/c94dbbdb-f0e3-4f43-9a3a-a4ce9b7f3544)
+
+![TabletScreenloading](https://github.com/user-attachments/assets/4aa578b1-34d1-40ca-9586-d3a1e76716d9)
+
+Mobile
+![MobileScreen](https://github.com/user-attachments/assets/b76e3d11-9195-44b8-b2f3-bc1ff438b4f8)
+
+![MobileDashboard](https://github.com/user-attachments/assets/51f72a00-a746-4050-a27d-91be34b20cb5)
+
+![MobileScreenDashboard2](https://github.com/user-attachments/assets/fc5934eb-02b6-48cf-a794-64c2bd5f2069)
+
+![MobileLoadingScreen](https://github.com/user-attachments/assets/e6b13b62-710b-492c-8433-2539724ea90f)
 
 Features
 Natural Language Processing (NLP): A.I. Mitra utilizes Gemini API to understand and process user inputs in natural language.
