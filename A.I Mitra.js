@@ -1,4 +1,4 @@
-/*All queries*/
+it/*All queries*/
 // Querying the elements from the DOM
 const slideBtn = document.querySelector(".fa-bars"); // Hamburger menu button
 const promptsendBtn = document.querySelector(".sendBtn"); // Send button for prompt
@@ -84,7 +84,7 @@ randomQuery.forEach(suggest => {
 });
 
 // API details for content generation
-const API_KEY = "AIzaSyB7SPNWcSI_NS-v3aU_VLMUFlCzcnkD1Sg";
+const API_KEY = "Use Your Own Gemini API";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 // Function to handle API response and display it in the chat
