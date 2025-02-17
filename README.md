@@ -3,7 +3,7 @@
 Welcome to **A.I. Mitra**, an advanced AI-powered chatbot platform built using the **Gemini API**. This project enables interactive communication with an AI that understands natural language and generates human-like responses. Whether you're building a chatbot for your platform or just exploring the capabilities of AI, **A.I. Mitra** offers the tools and functionality you need.
 
 ---
-**UPDATE** From feburary it is not responsive to all aspect of device instead of that i made it only desktop-first-approach.
+**UPDATE** From feburary it is not responsive to all aspect of device instead of that i made it only desktop-first-approach based but it is still upto you to do modifications files are available in respository.
 ## 🏆 Features
 
 - **Natural Language Processing (NLP):** A.I. Mitra uses the Gemini API for processing and understanding user inputs in natural language.
