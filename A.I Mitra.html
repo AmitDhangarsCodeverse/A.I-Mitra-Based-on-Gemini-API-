@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and viewport settings for mobile responsiveness -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title of the webpage shown in the browser tab -->
+  <title>A.I Mitra</title>
+
+  <!-- External CSS for styling the page (main and responsiveness) -->
+  <link rel="stylesheet" href="AIMitrastyle.css">
+  <link rel="stylesheet" href="AIMitraResponsiveness.css">
+  <!-- Favicon for the website -->
+  <link rel="icon" href="Images Collection/logo bot.webp">
+
+  <!-- Font Awesome for icons (like bars, home, settings, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+<header>
+  <!-- Menu bar containing a hamburger icon, website name, and version information -->
+  <div class="menu-bar">
+    <i class="fa-solid fa-bars"></i>  
+    <h3>A.I Mitra</h3>
+    <p>Beta version</p>
+  </div>
+
+  <!-- Section displaying icons for navigation and features -->
+  <div class="logged-user">
+    <!-- Links for various sections -->
+    <a href="A.I Mitra.html"><i class="fa-solid fa-rotate-left"></i></a>
+    <a href="Pages files/BrowserSupport.html"><i class="fa-brands fa-chrome"></i></a>
+    <a href="Pages files/Howtouse.html"><i class="fa-regular fa-circle-question"></i></a>
+    <a href="Pages files/sorry.html"><i class="fa-solid fa-gear"></i></a>
+    <a href="Pages files/RepositaryLink.html"><i class="fa-solid fa-link"></i></a>
+    <a href="Pages files/sorry.html"><span class="fa-regular fa-circle-user login-icon"></span></a>
+  </div>
+</header>
+
+<!-- Main content section starts here -->
+<main>
+  <div class="utimate-wrapper">
+    <div class="chat-section">
+      <div class="chat-container">
+        <!-- New Chat section with an icon and a label -->
+        <div class="newchat">
+          <i class="fa-solid fa-plus"></i>
+          <p>New Chat</p>
+        </div>
+
+        <!-- Recent Chats section heading -->
+        <div class="recentchats">
+          <h3>Recent</h3>
+          <!-- Placeholder for future recent chats (currently commented out) -->
+          <!-- <div class="chat">
+             <i class="fa-regular fa-message"></i>
+             <p class="searchquery">Lorem ipsum dolor sit amet.</p>
+             <i class="fa-solid fa-trash delete-icon"></i>
+           </div>  -->
+        </div>
+      </div>
+
+      <!-- Location section to display the user's location -->
+      <div class="location">
+        <div class="location-container">
+          <i class="fa-solid fa-circle"></i>
+          <p>Etawah, Uttar Pradesh, India</p>
+        </div>
+        <p class="text-msg">Based on Your location</p>
+      </div>
+    </div>
+
+    <!-- Arrow button, possibly for navigation -->
+    <div class="arrow-btn"><i class="fa-solid fa-circle-arrow-right"></i></div>     
+
+    <!-- Interaction section where the user can see suggestions and communicate -->
+    <div class="interaction-section">
+      <div class="intractive-container">
+        <div class="content-wrapper">
+          <!-- Dashboard containing bot logo and refresh icon -->
+          <div class="dashboard">
+            <div class="logo-container">
+              <img src="Pages files/logo bot.webp" alt="" class="bot-icon">
+              <i class="fa-solid fa-rotate-left icon-watch"></i>
+            </div>
+
+            <!-- Welcome message container -->
+            <div class="welcome-msg-container">
+              <h1>Hello again</h1>
+              <p>Tell me what's on your mind or pick suggestions</p>
+            </div>
+
+            <!-- Cards container for interactive content suggestions -->
+            <div class="card-container">
+              <!-- Each card has a category with links to random search topics -->
+              <div class="card">
+                <h3>Understand</h3>
+                <a class="random-search">Characters from Harry Potter</a>
+                <a class="random-search">Public speaking skills</a>
+                <a class="random-search">Communication Skills</a>
+              </div>
+              <div class="card">
+                <h3>Create</h3>
+                <a class="random-search">Career Growth</a>
+                <a class="random-search">Research Paper on Atoms</a>
+                <a class="random-search">What is Wikipedia?</a>
+              </div>
+              <div class="card">
+                <h3>Explore</h3>
+                <a class="random-search">Special weekend plan</a>
+                <a class="random-search">Best beaches in India</a>
+                <a class="random-search">Presentation Topic ideas</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder for chat messages (commented out content) -->
+          <div class="chat-list">
+            <!-- Example of message content (commented out) -->
+            <!-- <div class="message outgoing">... </div> -->
+          </div>
+
+          <!-- Prompt bar for the user to enter their query or prompt -->
+          <div class="prompt-container">
+            <i class="fa-solid fa-image"></i>
+            <input type="text" placeholder="Enter a prompt here" class="getPrompt" value="">
+            <i class="fa-solid fa-paper-plane sendBtn"></i>
+          </div>
+
+          <!-- Privacy warning text with a link to the privacy page -->
+          <p class="privacy-text">A.I Mitra may display inaccurate info, including about people, so double-check its responses. <a href="Pages files/Privacy.html">Your privacy and A.I Mitra</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Linking the JavaScript file for interactivity -->
+<script src="A.I Mitra.js"></script>
+</body>
+</html>

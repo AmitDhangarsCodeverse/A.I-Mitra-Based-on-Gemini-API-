@@ -1,0 +1,541 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Font-family example syntax */
+/* font-family:"Doto",serif; */
+/* font-family:"Poppins",serif; */
+/* font-family:"Faculty Glyphic",serif; */
+
+/* Universal Reset for All Elements */
+* {
+  margin: 0;
+  padding: 0;
+  color: white; /* Default text color */
+}
+
+/* Body Styling */
+body {
+  background-color: #202124; /* Dark background color for the body */
+}
+
+/* Header Styling */
+header {
+  padding: 27px;
+  display: flex;
+  justify-content: space-between; /* Space between header elements */
+}
+
+/* Menu Bar Styling */
+.menu-bar {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: space-between;
+  width:18%; /* Set width of the menu bar */
+}
+
+.bars {
+  position: absolute; /* Position bars icon absolutely */
+}
+
+.menu-bar i {
+  font-size: 1rem; /* Set font size for icons in the menu */
+}
+
+.menu-bar i:active {
+  color: #646568; /* Change icon color on active state */
+}
+
+.menu-bar h3 {
+  font-size: 1.2rem;
+  font-family: "Faculty Glyphic", serif; /* Font styling for heading */
+}
+
+.menu-bar p {
+  border: 2px solid rgb(59, 83, 191); /* Border for paragraph */
+  border-radius: 10px;
+  padding: 3px;
+  font-size: .7rem;
+  font-family: "Poppins", serif; /* Font styling for paragraph */
+}
+
+/* Logged-in User Section Styling */
+.logged-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%; /* Width of logged user section */
+}
+
+.logged-user i {
+  font-size: .9rem; /* Font size for logged user icon */
+}
+
+.login-icon {
+  font-size: 2rem; /* Font size for login icon */
+}
+
+/* Ultimate Wrapper for Chat Section */
+.utimate-wrapper {
+  display: flex;
+  height: 600px;
+  transition: all .4s ease-in; /* Smooth transition for all changes */
+}
+
+/* Chat Section Layout */
+.chat-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Stack items vertically */
+  padding-left: 30px;
+  height: 100%; /* Full height */
+  width: 20%; /* Set width of chat section */
+  transition: all .4s ease-in; /* Smooth transition */
+}
+
+/* New Chat Styling */
+.newchat {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  padding-left: 50px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.newchat p {
+  margin-left: 10px;
+  font-size: .7rem;
+  font-family: "Poppins", serif; /* Font styling for new chat text */
+}
+
+/* Recent Chats List */
+.recentchats {
+  height: 480px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Faculty Glyphic", serif;
+  overflow: auto; /* Enable scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Hide Scrollbar */
+.recentchats::-webkit-scrollbar {
+  display: none;
+}
+
+/* Recent Chats Header */
+.recentchats h3 {
+  margin-bottom: 10px; /* Space between heading and chats */
+}
+
+/* Single Chat Styling */
+.chat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+  overflow: auto;
+}
+
+/* Hide Scrollbar for Chats */
+.chat::-webkit-scrollbar {
+  display: none;
+}
+
+/* Show Delete Icon on Hover */
+.chat:hover .delete-icon {
+  visibility: visible;
+}
+
+/* Chat Item Icon */
+.chat i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 1rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Chat Text Styling */
+.chat p {
+  padding-left: 10px;
+  font-size: .6rem;
+}
+
+/* Delete Icon for Chats */
+.chat .delete-icon {
+  visibility: hidden; /* Initially hidden */
+  height: 35px;
+  width: 35px;
+  font-size:.8rem;
+  margin-left: 20px;
+  border-radius: 50%;
+  background-color: #202124;
+  cursor: pointer;
+}
+
+/* Hover Effect for Delete Icon */
+.chat .delete-icon:hover {
+  background-color: #646568;
+}
+
+/* Location Container for Chat */
+.location-container {
+  margin-top: 3px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "Poppins", serif;
+}
+
+.location-container i {
+  font-size: .3rem;
+  color: #909091;
+  margin: 0;
+}
+
+.location-container p {
+  font-size: .6rem;
+  padding-left: 5px;
+}
+
+/* Text Message Styling */
+.text-msg {
+  font-size: .6rem;
+  padding-left: 12px;
+  font-family: "Poppins", serif;
+  color: rgb(58, 58, 213);
+  padding-bottom: 15px;
+}
+
+/* Arrow Button (Hidden by Default) */
+.arrow-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: -70px;
+  transition:transform 0.5s ease-in-out; /* Smooth transition */
+  cursor: pointer;
+}
+
+.arrow-btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  margin: 0;
+  border-radius: 50%;
+}
+
+/* Arrow Button Hover Effect */
+.arrow-btn i:hover {
+  background-color: #353536;
+}
+
+/* Interaction Section for User Input */
+.interaction-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  overflow: hidden; /* Hide overflow content */
+  transition: transform 0.5s ease-in-out
+}
+
+/* Interactive Container Styling */
+.intractive-container {
+  display: block;
+  height: 600px;
+  width: 100%;
+  background-color: #0d0e0f;
+  border-radius: 10px;
+}
+
+/* Content Wrapper Padding */
+.content-wrapper {
+  padding: 25px;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  height: 435px;
+  padding: 25px;
+}
+
+/* Welcome Message Styling */
+.welcome-msg-container h1 {
+  width: fit-content;
+  background-clip: text;
+  background: linear-gradient(to right, #4285f4, #d96570);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Logo Container for Dashboard */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icon-watch {
+  font-size: .8rem;
+}
+
+/* Bot Icon Styling */
+.bot-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* Circular bot icon */
+}
+
+/* Welcome Message Container */
+.welcome-msg-container {
+  padding-left: 15px;
+}
+
+.welcome-msg-container h1 {
+  font-family: "Faculty Glyphic", serif;
+  line-height: 50px;
+  font-size:2.4rem;
+}
+
+.welcome-msg-container p {
+  font-size: 1.2rem;
+  font-family: "Poppins", serif;
+  line-height: 60px;
+  color: #646568;
+}
+
+/* Card Container for Dashboard Cards */
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+}
+
+/* Individual Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  width: 270px;
+  background-color: #202124;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  background-color: #323235;
+  transition: all .3s ease-in-out;
+}
+
+/* Card Title Styling */
+.card h3 {
+  font-size:1.5rem;
+  font-family: "Faculty Glyphic", serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Link Styling Inside Cards */
+.card a {
+  background-color: black;
+  margin-bottom: 10px;
+  font-size:.75rem;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 12px;
+  padding-left: 15px;
+  border-radius: 30px;
+  text-align: start;
+  font-family: "Poppins", serif;
+  cursor: pointer;
+}
+
+/* Active Link Styling in Card */
+.card a:active {
+  color: #646568;
+}
+
+/* Chat List Styling */
+.chat-list {
+  /* height: 435px; */
+  overflow: auto;
+}
+
+.chat-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Message Container Styling */
+.message-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.message-container i {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.message-container p {
+  padding-top: 17px;
+  font-family: "Poppins", serif;
+  font-size: .7rem;
+}
+
+/* Message Content Section */
+.message-content {
+  display: flex;
+}
+
+.message-content img {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.message-content p {
+  font-family: "Poppins", serif;
+  font-size: .7rem;
+  cursor: pointer;
+  padding-top:.75rem;
+}
+
+/* Upcoming Message Styling */
+.message-upcoming {
+  display: block;
+}
+
+.message-upcoming .api-response-text{
+  font-size:clamp(.45rem,2vw,.7rem)
+}
+/* Outgoing Text Styling */
+.outgoing-text {
+  color: white;
+  font-size: .2rem;
+  font-family: "Poppins", serif;
+}
+
+/* Outgoing Message Bot Icon */
+.outgoing-msg-bot {
+  display: inline;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Loading Message Indicator */
+.loading p {
+  display: none;
+}
+/* Copy Icon Styling */
+.message-content .fa-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 35px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+/* Copy Icon Hover Effect */
+.message-content i:hover {
+  background-color: #646568;
+}
+
+/* Loading Indicator Section */
+.chat-list .loading-indicator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .4rem;
+}
+
+/* Loading Bar Styling */
+.chat-list .loading-indicator .loading-bar {
+  height: 10px;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right, #646568, #193177);
+  border-radius: 10px;
+  animation: animate 3s linear infinite;
+}
+
+.chat-list .loading-indicator .loading-bar:last-child {
+  width: 80%;
+}
+
+/* Keyframes for Loading Animation */
+@keyframes animate {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
+
+/* Prompt Container */
+.prompt-container {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.prompt-container i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.prompt-container i:active {
+  color: #909091;
+}
+
+/* Get Prompt Button Styling */
+.prompt-container .getPrompt {
+  height: 30px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: .6rem;
+  width: 90%;
+  padding: 10px;
+  padding-left: 20px;
+  font-family: "Poppins", serif;
+  color: white;
+}
+
+/* Placeholder Text Styling */
+.prompt-container ::placeholder {
+  color: white;
+  font-size: .6rem;
+  padding-left: 5px;
+}
+
+/* Privacy Text Styling */
+.privacy-text {
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: .7rem;
+}
+
+/* Hide Element */
+.display-none {
+  display: none;
+}

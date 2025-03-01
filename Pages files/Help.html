@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Help Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="jpg/png" href="logo bot.webp">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #202124;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color:#2C2F34;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #fff;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        .faq-item {
+            background-color: #202124;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .contact-info {
+            background-color: #202124;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .important {
+            font-weight: 600;
+            color: #e74c3c;
+        }
+
+        .example {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 20px 0;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #007bff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive Design with Media Queries */
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    .nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .nav a {
+        padding: 12px;
+    }
+
+    .faq-item, .contact-info {
+        padding: 10px;
+    }
+
+    .example {
+        padding: 12px;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    .nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav a {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .faq-item, .contact-info {
+        padding: 8px;
+    }
+
+    .example {
+        padding: 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Help Center</h1>
+
+        <ul class="nav">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="#resources">Helpful Resources</a></li>
+        </ul>
+
+        <div class="section" id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <h3>How do I create an account?</h3>
+                <p>To create an account, click the "Sign Up" button on the homepage. Enter your email address, create a password, and follow the instructions to verify your account.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I reset my password?</h3>
+                <p>If you've forgotten your password, click "Forgot Password" on the login page. Enter your email, and we will send you a link to reset your password.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I cancel my subscription?</h3>
+                <p>To cancel your subscription, navigate to your account settings and select "Billing". From there, you can manage your subscription and cancel if needed.</p>
+            </div>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Support</h2>
+            <p>If you couldn't find the answer to your question, our support team is here to help. You can reach us through the following methods:</p>
+
+            <div class="contact-info">
+                <h3>Email Support</h3>
+                <p>Send an email to <a href="mailto:support@example.com">support@example.com</a> and describe your issue. Our team will get back to you within 24 hours.</p>
+            </div>
+
+            <div class="contact-info">
+                <h3>Phone Support</h3>
+                <p>You can reach our support team by phone at <strong>1-800-123-4567</strong>. Our working hours are from 9 AM to 5 PM (Mon-Fri).</p>
+            </div>
+        </div>
+
+        <div class="section" id="resources">
+            <h2>Helpful Resources</h2>
+            <p>We have a collection of helpful resources that may assist you in resolving common issues. Below are some helpful links:</p>
+
+            <ul>
+                <li><a href="#">How to Use the Dashboard</a></li>
+                <li><a href="#">Troubleshooting Account Issues</a></li>
+                <li><a href="#">Best Practices for Website Performance</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
