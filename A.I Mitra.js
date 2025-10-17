@@ -84,7 +84,7 @@ randomQuery.forEach(suggest => {
 });
 
 // API details for content generation
-const API_KEY = "AIzaSyB7SPNWcSI_NS-v3aU_VLMUFlCzcnkD1Sg";
+const API_KEY = "please your own api key";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 // Function to handle API response and display it in the chat
